@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 30px 0;
+  padding: 30px 0 15px;
   li {
     padding: 5px 0;
     span {
@@ -26,7 +26,7 @@ export const Box = styled.div`
 
 export const BoxShadow = styled.div`
   padding: 35px;
-  background: #fff;
+  background: #f0f1ef;
   -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);

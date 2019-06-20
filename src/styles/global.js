@@ -18,14 +18,18 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased !important;
     font-family: 'Open Sans', sans-serif;
     color:#707070;
-    background:#f4f4f4;
+    background:#fefefe;
   }
 
   button{
     cursor: pointer;
+    transition: all 0.5s ease;
   }
   ul{
     list-style:none;
+  }
+  :hover{
+    transition: all 0.5s ease;
   }
 
 `;
