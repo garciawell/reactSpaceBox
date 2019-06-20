@@ -13,6 +13,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
   }
 
+  h1{
+    margin-bottom:35px;
+  }
+
   body{
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;

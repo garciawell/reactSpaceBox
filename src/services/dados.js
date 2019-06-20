@@ -4,7 +4,7 @@ const dados = [
     avatar: `${process.env.PUBLIC_URL}/images/avatar-alberto.png`,
     name: 'Alberto',
     job: 'Presidente',
-    age: 20,
+    age: 46,
   },
   {
     id: 2,
