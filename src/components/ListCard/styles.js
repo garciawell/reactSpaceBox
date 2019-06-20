@@ -16,6 +16,10 @@ export const Box = styled.div`
       color: #092432;
     }
   }
+  @media (max-width: 1440px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 `;
 
 export const BoxShadow = styled.div`
@@ -52,6 +56,18 @@ export const BoxShadow = styled.div`
           color: #fff;
         `};
     }
+  }
+
+  @media (max-width: 1440px) {
+    width: 32%;
+  }
+  @media (max-width: 1200px) {
+    width: 48%;
+  }
+  @media (max-width: 767px) {
+    width: 460px;
+    margin-left: auto;
+    margin-right: auto;
   }
 `;
 

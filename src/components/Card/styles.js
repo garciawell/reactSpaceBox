@@ -22,6 +22,10 @@ export const Box = styled.div`
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  @media (max-width: 1440px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 `;
 
 export const BoxShadow = styled.div`

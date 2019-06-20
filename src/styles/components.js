@@ -5,6 +5,10 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding-bottom: 150px;
+
+  @media (max-width: 767px) {
+    padding-top: 90px;
+  }
 `;
 
 export const Container = styled.div`
@@ -15,4 +19,8 @@ export const Box = styled.div`
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  @media (max-width: 1440px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 `;

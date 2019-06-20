@@ -40,6 +40,13 @@ export const Container = styled.div`
     rgba(9, 36, 50, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dd1d1', endColorstr='#092432', GradientType=1 );
+
+  @media (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
 `;
 
 export const Box = styled.div`
@@ -50,4 +57,21 @@ export const Box = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 1440px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media (min-width: 767px) {
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 `;

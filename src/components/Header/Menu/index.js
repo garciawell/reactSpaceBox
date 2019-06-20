@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import { List, LinkMenu } from './styles';
 
 const itemsMenu = [
@@ -8,9 +8,9 @@ const itemsMenu = [
   { id: 3, slug: 'contato', label: 'Contato' },
 ];
 
-function Menu() {
+function Menu({ className }) {
   return (
-    <List>
+    <List className={className}>
       {itemsMenu.map(item => (
         <li key={item.id}>
           <LinkMenu to={`/${item.slug}`}>{item.label}</LinkMenu>
@@ -19,5 +19,9 @@ function Menu() {
     </List>
   );
 }
+
+Menu.propTypes = {
+  className: PropTypes.string.isRequired,
+};
 
 export default Menu;
