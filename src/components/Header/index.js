@@ -15,6 +15,7 @@ function getWindowDimensions() {
 
 function Header() {
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  const [active, setActive] = useState(window.location.pathname.replace('/', ''));
 
   useEffect(() => {
     function handleResize() {
@@ -29,11 +30,11 @@ function Header() {
     <Container>
       <Box>
         <div id="outer-container">
-          <Link to="/">
+          <Link to="/" onClick={() => setActive('home')}>
             <img src={logo} alt="Logo" />
           </Link>
           {windowDimensions.width > 768 ? (
-            <Menu className="hiddenDown" />
+            <Menu active={active} setActive={setActive} className="hiddenDown" />
           ) : (
             <MenuMobile className="hiddenUp" />
           )}

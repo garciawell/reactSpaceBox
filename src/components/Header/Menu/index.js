@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { List, LinkMenu } from './styles';
 
@@ -8,16 +8,14 @@ const itemsMenu = [
   { id: 3, slug: 'contato', label: 'Contato' },
 ];
 
-function Menu({ className }) {
-  const [active, setActive] = useState(window.location.pathname.replace('/', ''));
-
+function Menu({ className, setActive, active }) {
   return (
     <List className={className}>
       {itemsMenu.map(item => (
         <li key={item.id}>
           <LinkMenu
-            active={active === item.slug}
             onClick={() => setActive(item.slug)}
+            active={active === item.slug}
             to={`/${item.slug}`}
           >
             {item.label}
@@ -30,6 +28,8 @@ function Menu({ className }) {
 
 Menu.propTypes = {
   className: PropTypes.string.isRequired,
+  setActive: PropTypes.func.isRequired,
+  active: PropTypes.string.isRequired,
 };
 
 export default Menu;
