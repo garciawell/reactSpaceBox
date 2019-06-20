@@ -1,5 +1,4 @@
-import { createGlobalStyle } from "styled-components";
-// import 'rc-slider/assets/index.css';
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -11,18 +10,21 @@ const GlobalStyle = createGlobalStyle`
 
   html, body, #root{
     height:100%;
+    font-family: 'Open Sans', sans-serif;
   }
 
   body{
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
-    background: #181818;
-    font-family: 'Montserrat', sans-serif;
-    color:#fff;
+    font-family: 'Open Sans', sans-serif;
+    color:#707070;
   }
 
   button{
     cursor: pointer;
+  }
+  ul{
+    list-style:none;
   }
 
 `;

@@ -1,7 +1,18 @@
 import React from 'react';
+import logo from 'assets/images/logo.png';
 
-import { Container } from './styles';
+import { Container, Box } from './styles';
+import Menu from './Menu/index';
 
-const Header = () => <div />;
+function Header() {
+  return (
+    <Container>
+      <Box>
+        <img src={logo} alt="Logo" />
+        <Menu />
+      </Box>
+    </Container>
+  );
+}
 
 export default Header;

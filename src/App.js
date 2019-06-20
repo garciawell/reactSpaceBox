@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './config/reactotron';
 import { Provider } from 'react-redux';
+import Header from 'components/Header/index';
 import GlobalStyle from './styles/global';
 
 import { Wrapper } from './styles/components';
@@ -15,6 +16,7 @@ const App = () => (
     <BrowserRouter>
       <Fragment>
         <Wrapper>
+          <Header />
           <Routes />
         </Wrapper>
         <GlobalStyle />

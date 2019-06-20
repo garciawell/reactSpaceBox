@@ -28,10 +28,6 @@
       "node": {
         "paths": ["src"],
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      },
-      "babel-plugin-root-import": {
-        "rootPathPrefix": "src",
-        "rootPathSuffix": "src"
       }
     }
   }
