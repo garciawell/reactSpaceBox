@@ -1,6 +1,5 @@
 import React from 'react';
 import data from 'services/dados';
-// import PropTypes from 'prop-types';
 import {
   BoxShadow, Figure, Box, Notification,
 } from './styles';
@@ -30,11 +29,3 @@ export default function ListCard() {
     </Box>
   );
 }
-
-// ListCard.propTypes = {
-//   data: PropTypes.shape({
-//     id: PropTypes.number.isRequired,
-//     cargo: PropTypes.string.isRequired,
-//     nome: PropTypes.string.isRequired,
-//   }).isRequired,
-// };
