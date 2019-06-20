@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const List = styled.ul`
   list-style: none;
@@ -12,4 +13,9 @@ export const List = styled.ul`
       padding-right: 0;
     }
   }
+`;
+
+export const LinkMenu = styled(Link)`
+  color: #fff;
+  text-decoration: none;
 `;

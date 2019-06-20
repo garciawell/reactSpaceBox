@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { List } from './styles';
+import { List, LinkMenu } from './styles';
 
 const itemsMenu = [
   { id: 1, slug: 'empresa', label: 'Empresa' },
@@ -12,7 +12,9 @@ function Menu() {
   return (
     <List>
       {itemsMenu.map(item => (
-        <li key={item.id}>{item.label}</li>
+        <li key={item.id}>
+          <LinkMenu to={`/${item.slug}`}>{item.label}</LinkMenu>
+        </li>
       ))}
     </List>
   );
