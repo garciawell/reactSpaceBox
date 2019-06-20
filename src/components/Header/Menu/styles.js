@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const List = styled.ul`
@@ -18,4 +18,13 @@ export const List = styled.ul`
 export const LinkMenu = styled(Link)`
   color: #fff;
   text-decoration: none;
+  border: 1px solid transparent;
+  padding: 10px 15px;
+  &:hover {
+    border: 1px solid #fff;
+  }
+  ${props => props.active
+    && css`
+      border: 1px solid #fff;
+    `};
 `;
