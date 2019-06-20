@@ -11,7 +11,7 @@ export default function Card() {
       <Box>
         <BoxShadow>
           <Figure>
-            <img src={`${process.env.PUBLIC_URL}/images/avatar-alberto.png`} alt="Avatar" />
+            <img src={infMerber.avatar} alt="Avatar" />
           </Figure>
 
           <ul>
