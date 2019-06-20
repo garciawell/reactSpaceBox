@@ -1,9 +1,11 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import {
   Container, Box, BoxShadow, Figure,
 } from './styles';
 
 export default function Card() {
+  const infMerber = useSelector(state => state.persons.data);
   return (
     <Container>
       <Box>
@@ -15,15 +17,15 @@ export default function Card() {
           <ul>
             <li>
               <span>Nome: </span>
-              <strong>Alberto</strong>
+              <strong>{infMerber.name}</strong>
             </li>
             <li>
               <span>Cargo: </span>
-              <strong>Presidente</strong>
+              <strong>{infMerber.job}</strong>
             </li>
             <li>
               <span>Idade: </span>
-              <strong>46</strong>
+              <strong>{infMerber.age}</strong>
             </li>
           </ul>
         </BoxShadow>
